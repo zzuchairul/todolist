@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddTodoFragment">
+
+    <TextView
+        android:id="@+id/addTodoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_todo"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/todo_title"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addTodoTitle"/>
+
+    <RadioGroup
+        android:id="@+id/todo_priority_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTitle">
+
+        <RadioButton
+            android:id="@+id/pm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/penting_mendesak" />
+        <RadioButton
+            android:id="@+id/ptm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/penting_tidak_mendesak" />
+        <RadioButton
+            android:id="@+id/tpm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tidak_penting_mendesak" />
+        <RadioButton
+            android:id="@+id/tptm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tidak_penting_tidak_mendesak" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/addTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/add_todo"
+        android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

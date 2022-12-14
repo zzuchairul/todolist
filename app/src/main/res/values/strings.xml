@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PrioTodoApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_todo">Add Todo</string>
+    <string name="todo_list">Todo List</string>
+    <string name="todo_title">Todo Title</string>
+    <string name="finish">Finish</string>
+    <string name="penting_mendesak">Penting Mendesak</string>
+    <string name="penting_tidak_mendesak">Penting Tidak Mendesak</string>
+    <string name="tidak_penting_mendesak">Tidak Penting Mendesak</string>
+    <string name="tidak_penting_tidak_mendesak">Tidak Penting Tidak Mendesak</string>
+</resources>

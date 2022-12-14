@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="List"
+        android:id="@+id/todoListNav"
+        android:icon="@drawable/ic_baseline_checklist_rtl_24"
+        />
+    <item android:title="History"
+        android:id="@+id/todoHistoryNav"
+        android:icon="@drawable/ic_baseline_history_24"
+    />
+</menu>
